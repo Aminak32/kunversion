@@ -1,0 +1,29 @@
+{
+	"name" : "kunversion/kunversion",
+	"description" : "Kunversion shared library.",
+	"keywords" : [
+		"kunversion",
+		"ire"
+	],
+	"homepage" : "https://github.com/",
+	"type" : "library",
+	"license" : "MIT",
+	"authors" : [
+		{
+			"name" : "IRE",
+			"homepage" : "http://insiderealestate.com"
+		}
+	],
+	"require" : {
+		"php" : ">=5.6.0|>=7.0",
+		"vlucas/phpdotenv": "^2.2.1"
+	},
+	"autoload" : {
+		"psr-0" : {
+			"Kunversion\\" : "src/Kunversion"
+		},
+		"files" : [
+			"src/helpers/php"
+		]
+	}
+}

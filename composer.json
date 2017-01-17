@@ -1,0 +1,16 @@
+{
+    "name": "skrelo/kunversion",
+    "description": "Kunversion Shared Library",
+    "type": "library",
+    "require": {
+        "vlucas/phpdotenv": "^2.4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Scott Krelo",
+            "email": "skrelo@insiderealestate.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
