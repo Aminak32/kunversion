@@ -1,29 +1,23 @@
 {
-	"name" : "kunversion/kunversion",
-	"description" : "Kunversion shared library.",
-	"keywords" : [
-		"kunversion",
-		"ire"
-	],
-	"homepage" : "https://github.com/",
-	"type" : "library",
-	"license" : "MIT",
-	"authors" : [
-		{
-			"name" : "IRE",
-			"homepage" : "http://insiderealestate.com"
-		}
-	],
-	"require" : {
-		"php" : ">=5.6.0|>=7.0",
-		"vlucas/phpdotenv": "^2.2.1"
-	},
-	"autoload" : {
-		"psr-0" : {
-			"Kunversion\\" : "src/Kunversion"
-		},
-		"files" : [
-			"src/helpers/php"
-		]
-	}
+    "name": "skrelo/kunversion",
+    "description": "Kunversion Shared Library",
+    "type": "library",
+    "require": {
+    	"php":">=5.6.0",
+        "vlucas/phpdotenv": "^2.4"
+    },
+    "homepage":"https://github.com/skrelo/kunversion",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Scott Krelo",
+            "email": "skrelo@insiderealestate.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload":{
+    	"psr-4": {
+    		"Kunversion\\": "src/"
+    	}
+    }
 }
