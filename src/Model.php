@@ -9,7 +9,9 @@
 
         public static function instance()
         {
-            var_dump(get_called_class());
+            $class = get_called_class();
+            var_dump($class);
+            return new $class();
         }
 
         public static function getDb($config=false)

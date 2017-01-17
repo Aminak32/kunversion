@@ -19,6 +19,13 @@
         const KV_SITE = "http://www.kunversion.com";
         public function __construct($verify_subdomain=false)
         {
+            try {
+                (new Dotenv\Dotenv(__DIR__ . "/../../"))->load();
+            } catch (Dotenv\Exception\InvalidPathException $e) {
+                var_dump($e);
+            }
+
+
             if ( !empty($_REQUEST['key'] ) && isset($_SESSION['lead']) && $_REQUEST['key'] != '') {
                 $email = self::decrypt($_REQUEST[ 'key' ], self::$salt);
                 $l = new Lead;
